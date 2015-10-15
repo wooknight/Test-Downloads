@@ -5,7 +5,7 @@ Copyright 2007, Michael Schrenk
    This software is designed for use with the book,                                                             
    "Webbots, Spiders, and Screen Scarpers", Michael Schrenk, 2007 No Starch Press, San Francisco CA             
                                                                                                                 
-W3C® SOFTWARE NOTICE AND LICENSE                                                                                
+W3Cï¿½ SOFTWARE NOTICE AND LICENSE                                                                                
                                                                                                                 
 This work (and included software, documentation such as READMEs, or other                                       
 related items) is being provided by the copyright holders under the following license.                          
@@ -257,6 +257,7 @@ RETURNS:
 ***********************************************************************/
 function get_base_domain_address($page_base)
 	{
+		$domain_base="";
 	for ($pointer=8; $pointer<strlen($page_base); $pointer++)
 		{
 		if (substr($page_base, $pointer, 1)=="/")
