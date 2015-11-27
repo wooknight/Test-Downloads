@@ -48,8 +48,8 @@ function login()
 	$data_array["Password"] = "a8460b";
 	$response = http($target=$action, $ref, $method, $data_array, EXCL_HEAD);	
 	# Download the web page
-	$web_page = http_get("http://www.tailopez.com/cp/Millionaire-Mentor-Academy/The-67-Steps/67-steps-overview&pid=1", $referer="");
-	
+	$web_page = http_get("http://www.tailopez.com/cp/Knowledge-Society/The-67-Steps/67-steps-overview&pid=1", $referer="");
+		
 	# Update the target in case there was a redirection
 	$target = $web_page['STATUS']['url'];
 // 	var_dump($web_page['FILE']);
